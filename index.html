@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Trade With Munaaf</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,242 +18,126 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:
-linear-gradient(135deg,#020617,#0f172a,#111827);
-min-height:100vh;
+background:#0f172a;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:20px;
-overflow:hidden;
+min-height:100vh;
 color:#fff;
-}
-
-/* GLOW */
-
-.blur1,
-.blur2{
-position:fixed;
-border-radius:50%;
-filter:blur(90px);
-z-index:-1;
-}
-
-.blur1{
-width:260px;
-height:260px;
-background:#22c55e;
-top:-80px;
-left:-80px;
-opacity:0.25;
-}
-
-.blur2{
-width:260px;
-height:260px;
-background:#3b82f6;
-bottom:-100px;
-right:-100px;
-opacity:0.25;
 }
 
 /* CARD */
 
-.card{
-width:100%;
-max-width:430px;
+.container{
+width:95%;
+max-width:420px;
+padding:30px 25px;
+border-radius:18px;
 
-background:rgba(255,255,255,0.06);
-backdrop-filter:blur(16px);
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
 
 border:1px solid rgba(255,255,255,0.08);
 
-border-radius:28px;
-
-padding:30px 24px;
-
-box-shadow:
-0 15px 50px rgba(0,0,0,0.6),
-inset 0 1px 1px rgba(255,255,255,0.08);
-
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
 text-align:center;
-
-position:relative;
-overflow:hidden;
-}
-
-/* TOP TAG */
-
-.top-tag{
-display:inline-block;
-padding:8px 16px;
-border-radius:50px;
-font-size:12px;
-font-weight:700;
-background:rgba(34,197,94,0.12);
-border:1px solid rgba(34,197,94,0.3);
-color:#4ade80;
-margin-bottom:18px;
 }
 
 /* LOGO */
 
-.logo-wrap{
-display:flex;
-justify-content:center;
-margin-bottom:15px;
-}
-
 .logo{
-width:90px;
-height:90px;
+width:80px;
+height:80px;
 border-radius:50%;
-border:3px solid #facc15;
-padding:4px;
-object-fit:cover;
-
-box-shadow:
-0 0 25px rgba(250,204,21,0.4);
+border:2px solid #FFD700;
+margin-bottom:12px;
 }
 
-/* HEADING */
+/* TEXT */
 
 h1{
-font-size:28px;
-font-weight:800;
-line-height:1.2;
-margin-bottom:8px;
-
-background:linear-gradient(90deg,#facc15,#ffffff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+font-size:22px;
+color:#FFD700;
+margin-bottom:6px;
 }
 
 h2{
-font-size:14px;
-font-weight:500;
-opacity:0.85;
+font-size:15px;
+opacity:0.9;
+margin-bottom:10px;
+}
+
+.sub{
+font-size:13px;
+opacity:0.7;
 margin-bottom:18px;
-letter-spacing:1px;
-}
-
-.desc{
-font-size:14px;
-line-height:1.7;
-opacity:0.85;
-margin-bottom:20px;
-}
-
-/* TRUST */
-
-.trust-box{
-display:flex;
-justify-content:space-between;
-gap:10px;
-margin-bottom:18px;
-}
-
-.trust{
-flex:1;
-background:rgba(255,255,255,0.05);
-padding:12px 10px;
-border-radius:14px;
-border:1px solid rgba(255,255,255,0.06);
-font-size:12px;
-font-weight:600;
 }
 
 /* BUTTON */
 
 .btn{
 display:block;
-width:100%;
 text-decoration:none;
-
-background:linear-gradient(90deg,#22c55e,#16a34a);
-
-padding:17px;
-border-radius:14px;
-
-font-size:16px;
+background:#22c55e;
+color:#000;
 font-weight:700;
-color:#fff;
-
-margin:14px 0;
-
-box-shadow:0 10px 25px rgba(34,197,94,0.35);
-
+padding:16px;
+border-radius:10px;
+margin:12px 0;
 transition:0.3s;
 }
 
 .btn:hover{
-transform:translateY(-2px) scale(1.02);
+background:#16a34a;
+transform:scale(1.03);
 }
 
-/* FEATURES */
+/* TRUST BOX */
 
-.features{
-margin-top:15px;
-text-align:left;
-}
-
-.feature{
-display:flex;
-align-items:center;
-gap:10px;
-
-background:rgba(255,255,255,0.04);
-
-padding:12px;
-border-radius:12px;
-
-margin-bottom:10px;
-
-font-size:14px;
-}
-
-/* LIVE BOX */
-
-.live{
-margin-top:18px;
-
-background:linear-gradient(90deg,
-rgba(59,130,246,0.15),
-rgba(34,197,94,0.15));
-
-padding:14px;
-border-radius:14px;
-
-border:1px solid rgba(255,255,255,0.08);
-
+.trust{
+background:rgba(0,255,150,0.08);
+padding:10px;
+border-radius:10px;
 font-size:13px;
-line-height:1.7;
+margin-bottom:15px;
+border:1px solid rgba(0,255,150,0.2);
 }
 
-/* TIMER */
+/* LIST */
+
+.points{
+list-style:none;
+font-size:14px;
+text-align:left;
+margin:15px 0;
+}
+
+.points li{
+margin:8px 0;
+}
+
+/* URGENCY */
 
 .timer{
-margin-top:18px;
+margin-top:10px;
 font-size:13px;
-font-weight:700;
 color:#facc15;
-
-animation:blink 1s infinite;
 }
 
-@keyframes blink{
-50%{
-opacity:0.5;
-}
-}
+/* SOCIAL PROOF */
 
-/* FOOTER */
-
-.footer{
-margin-top:22px;
+.proof{
+margin-top:12px;
 font-size:12px;
 opacity:0.7;
-line-height:1.7;
+}
+
+/* FOOTER BRAND */
+
+.footer{
+margin-top:20px;
+font-size:12px;
+opacity:0.6;
 }
 
 .footer a{
@@ -262,30 +146,16 @@ text-decoration:none;
 font-weight:600;
 }
 
+.footer a:hover{
+text-decoration:underline;
+}
+
+/* RISK */
+
 .risk{
 margin-top:10px;
 font-size:11px;
 opacity:0.5;
-}
-
-/* MOBILE */
-
-@media(max-width:480px){
-
-.card{
-padding:26px 18px;
-border-radius:24px;
-}
-
-h1{
-font-size:24px;
-}
-
-.btn{
-font-size:15px;
-padding:15px;
-}
-
 }
 
 </style>
@@ -293,102 +163,76 @@ padding:15px;
 
 <body>
 
-<div class="blur1"></div>
-<div class="blur2"></div>
+<div class="container">
 
-<div class="card">
+<img src="https://i.ibb.co/hxVNSp9D/m-GSv-B-zbumef2-Rploulf-Vrm-E09-Rfy-Plj-Js-Kb2-Vm-IN5-Klj-Lpk1t-R9i1m-UAL-l6mpo-u-UF8-C8xv-Otp-DDOayj3-Mul.jpg" class="logo">
 
-<div class="top-tag">
-🔥 INDIA'S FAST GROWING TRADING COMMUNITY
-</div>
+<h1>ZERO TO HERO</h1>
+<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
 
-<div class="logo-wrap">
-<img src="https://i.ibb.co/HThtfpR7/Whats-App-Image-2026-01-30-at-8-54-08-PM.jpg" class="logo">
-</div>
-
-<h1>TRADE WITH MUNAAF</h1>
-
-<h2>NIFTY • BANKNIFTY • OPTION CALLS</h2>
-
-<p class="desc">
-Get daily high-probability intraday setups with
-accurate entries, targets & risk management.
-Perfect for beginners and active traders.
+<p class="sub">
+Daily Intraday Trading Signals & Analysis
 </p>
 
-<div class="trust-box">
-
-<div class="trust">
-📈 5000+ Active Traders
-</div>
-
-<div class="trust">
-⚡ Live Market Updates
-</div>
-
-</div>
-
-<!-- BUTTON -->
-
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-🚀 JOIN FREE TELEGRAM NOW
+<!-- TOP BUTTON -->
+<a href="https://t.me/+pR5xtgWYsbAxNGJl" class="btn">
+🚀 Join Free Telegram Channel
 </a>
 
-<!-- FEATURES -->
-
-<div class="features">
-
-<div class="feature">
-✅ 5–7 Premium Setups Daily
+<div class="trust">
+✔ Trusted by 5,000+ Traders <br>
+✔ Daily Consistent Setups
 </div>
 
-<div class="feature">
-✅ Exact Entry • SL • Targets
-</div>
+<ul class="points">
+<li>✔ 5–7 High Probability Trades</li>
+<li>✔ Exact Entry, SL & Target</li>
+<li>✔ Beginner Friendly Guidance</li>
+<li>✔ Live Market Updates</li>
+</ul>
 
-<div class="feature">
-✅ Beginner Friendly Guidance
-</div>
-
-<div class="feature">
-✅ Fast News & Live Updates
-</div>
-
-</div>
-
-<!-- LIVE -->
-
-<div class="live">
-🔥 Today's Market Opportunities Are Live <br>
-Join Now Before Free Access Ends
-</div>
-
-<!-- BUTTON -->
-
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-💰 START FREE TODAY
+<!-- BOTTOM BUTTON -->
+<a href="https://t.me/+pR5xtgWYsbAxNGJl" class="btn">
+🚀 Join Free Telegram Channel
 </a>
 
 <div class="timer">
-⏳ Limited Time Free Access
+⏳ Free Access Closing Soon
 </div>
 
-<!-- FOOTER -->
+<div class="proof">
+📈 Limited Seats • Active Community
+</div>
 
+<p class="risk">
+⚠ Market investments are subject to risk
+</p>
+
+<!-- CLEAN FOOTER -->
 <div class="footer">
-
-Powered by
+Powered by 
 <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">
 AdsBuild Agency
 </a>
-
-<div class="risk">
-⚠ Market investments are subject to market risk
 </div>
 
 </div>
-
-</div>
-
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2136210213939174');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2136210213939174&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
